@@ -11,6 +11,7 @@ body {
     color: #333;
     background-color: #f4f4f4;
     padding: 20px;
+    direction: rtl; /* Right-to-left text direction for Arabic */
 }
 
 header {
@@ -31,11 +32,12 @@ nav ul {
     background: #007bff;
     margin: 20px 0;
     border-radius: 5px;
+    direction: rtl; /* Right-to-left text direction for navigation */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-left: 10px; /* Adjusted margin for RTL */
 }
 
 nav ul li a {
@@ -65,8 +67,14 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Apply LTR direction to English text within RTL context */
+.english-text {
+    direction: ltr;
+    display: inline; /* Ensures that the text flows correctly within RTL containers */
+}
+
 ul, ol {
-    margin-left: 20px;
+    margin-left: 20px; /* Margin adjusted for RTL */
 }
 
 a {
